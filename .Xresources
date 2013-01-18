@@ -1,0 +1,30 @@
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.antialias: true
+Xft.hintstyle: hintfull
+
+! xterm ----------------------------------------------------------------------
+
+!xterm.termName:     xterm-256color
+! xterm*geometry: 	80x25
+xterm*background:   	#13773D
+xterm*foreground:   	#E6D237
+xterm*faceName: Bitstream Vera Sans Mono:size=13
+
+! !xterm*faceNameDoublesize: WenQuanYi Zen Hei:pixelsize=15
+! !xterm*font: -misc-fixed-*-*-*-*-15-*-*-*-*-*-*-*
+! xterm*dynamicColors:      true
+! xterm*eightBitInput:      true
+! xterm*jumpScroll:         true
+! xterm*locale: 		true
+! xterm*multiScroll:        true
+! xterm*rightScrollBar:     true
+! xterm*saveLines:          512
+! xterm*scrollBar:          true
+! xterm*scrollKey:       	true
+! xterm*scrollTtyOutput:    false
+! xterm*toolBar:            false
+! xterm*utf8:               2
+! xterm*utf8Title: 	true
+! xterm.utf8: 		true
