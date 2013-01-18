@@ -1,0 +1,9 @@
+[user]
+	name = MacXiong
+	email = mxiong@hotmail.com
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[color]
+	ui = auto
