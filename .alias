@@ -3,10 +3,12 @@ alias la 	'll -a'
 alias c  	'clear'
 alias m  	'more'
 alias h  	'history'
+alias t       	'tail -F'
+alias bell    	'tput bel'
 
 # alias ssh	'/usr/bin/ssh'
 # alias xterm	'/usr/bin/xterm'
-alias xterm	'xterm -e screen'
+# alias xterm	'xterm -e screen'
 
 alias svdc	'irwin --site svdc --type gar'
 alias cyb	'irwin --site cyb --type gar'
