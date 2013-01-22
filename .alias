@@ -19,5 +19,18 @@ alias   sn0     'cd /proj/sutton_dft_vol1/mxiong/sn0; bootenv; p4w find_changeli
 alias   sn1     'cd /proj/sutton_dft_vol1/mxiong/sn1; bootenv; p4w find_changelist; sn'
 alias   sn2     'cd /proj/sutton_dft_vol1/mxiong/sn2; bootenv; p4w find_changelist; sn'
 alias   sn3     'cd /proj/sutton_dft_vol1/mxiong/sn3; bootenv; p4w find_changelist; sn'
+alias 	sn0v    'cd /proj/kern_dft_vol1/mxiong/tree/sn0; bootenv'
+alias 	sn1v    'cd /proj/kern_dft_vol1/mxiong/tree/sn1; bootenv'
 
 alias   tag     '/tool/pandora64/.package/ctags-5.7/bin/ctags -R $STEM/model_lib'
+
+# Project Kern
+alias 	kn	    'cd /proj/kn_fe/mxiong/trees/'
+alias 	kn0	    'cd /proj/kn_fe/mxiong/trees/kn0; bootenv'
+alias 	kn1	    'cd /proj/kn_fe/mxiong/trees/kn1; bootenv'
+alias 	kn0v    'cd /proj/kern_dft_vol1/mxiong/tree/kn0; bootenv'
+alias 	kn1v    'cd /proj/kern_dft_vol1/mxiong/tree/kn1; bootenv'
+
+alias   tag     'ctags -R $STEM/out/amd64rh3.0.VCS/Kern/common/pub $STEM/fch_dft/src/verif'
+alias   runall  'bootenv; rm -rf debug; mkdir debug; cd debug; dvsb dft -w 'when!~never''
+alias   fsdball 'bootenv; rm -rf debug_fsdb; mkdir debug_fsdb; cd debug_fsdb; dvsb dft -w 'when!~never' -D fsdb'
