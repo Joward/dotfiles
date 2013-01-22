@@ -34,3 +34,11 @@ alias 	kn1v    'cd /proj/kern_dft_vol1/mxiong/tree/kn1; bootenv'
 alias   tag     'ctags -R $STEM/out/amd64rh3.0.VCS/Kern/common/pub $STEM/fch_dft/src/verif'
 alias   runall  'bootenv; rm -rf debug; mkdir debug; cd debug; dvsb dft -w 'when!~never''
 alias   fsdball 'bootenv; rm -rf debug_fsdb; mkdir debug_fsdb; cd debug_fsdb; dvsb dft -w 'when!~never' -D fsdb'
+
+# Project KernCZ
+alias   kz      'cd /proj/kern_dft_vol1/mxiong/kerncz'
+alias   kz0     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz0; bootenv'
+alias   kz1     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz1; bootenv'
+alias   kz2     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz2; bootenv'
+
+alias   tag     'ctags -R $STEM/out/amd64rh3.0.VCS/$DJ_CONTEXT/common/pub $STEM/fch_dft/src/verif'
