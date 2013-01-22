@@ -12,3 +12,12 @@ alias bell    	'tput bel'
 
 alias svdc	'irwin --site svdc --type gar'
 alias cyb	'irwin --site cyb --type gar'
+
+# Project Sutton
+alias   sn    	'cd /proj/sutton_dft_vol1/mxiong'
+alias   sn0     'cd /proj/sutton_dft_vol1/mxiong/sn0; bootenv; p4w find_changelist; sn'
+alias   sn1     'cd /proj/sutton_dft_vol1/mxiong/sn1; bootenv; p4w find_changelist; sn'
+alias   sn2     'cd /proj/sutton_dft_vol1/mxiong/sn2; bootenv; p4w find_changelist; sn'
+alias   sn3     'cd /proj/sutton_dft_vol1/mxiong/sn3; bootenv; p4w find_changelist; sn'
+
+alias   tag     '/tool/pandora64/.package/ctags-5.7/bin/ctags -R $STEM/model_lib'
