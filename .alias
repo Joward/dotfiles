@@ -5,6 +5,7 @@ alias m  	'more'
 alias h  	'history'
 alias t       	'tail -F'
 alias bell    	'tput bel'
+alias vim       	'vim -X'
 
 # alias ssh	'/usr/bin/ssh'
 # alias xterm	'/usr/bin/xterm'
@@ -37,8 +38,8 @@ alias   fsdball 'bootenv; rm -rf debug_fsdb; mkdir debug_fsdb; cd debug_fsdb; dv
 
 # Project KernCZ
 alias   kz      'cd /proj/kern_dft_vol1/mxiong/kerncz'
-alias   kz0     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz0; bootenv'
-alias   kz1     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz1; bootenv'
-alias   kz2     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz2; bootenv'
+alias   kz0     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz0; bootenv; p4w find_changelist; kz'
+alias   kz1     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz1; bootenv; p4w find_changelist; kz'
+alias   kz2     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz2; bootenv; p4w find_changelist; kz'
 
 alias   tag     'ctags -R $STEM/out/amd64rh3.0.VCS/$DJ_CONTEXT/common/pub $STEM/fch_dft/src/verif'
