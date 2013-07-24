@@ -10,6 +10,7 @@ alias bell    	'tput bel'
 # alias xterm	'/usr/bin/xterm'
 # alias xterm	'xterm -e screen'
 
+alias srdc	'irwin --site srdc --type gar'
 alias svdc	'irwin --site svdc --type gar'
 alias cyb	'irwin --site cyb --type gar'
 
