@@ -28,3 +28,7 @@ xterm*faceName: Bitstream Vera Sans Mono:size=13
 ! xterm*utf8:               2
 ! xterm*utf8Title: 	true
 ! xterm.utf8: 		true
+! xterm*VT100*Translations: #override\n\
+! Shift <KeyPress> Insert:insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
+! ~Shift~Ctrl<Btn3Up>: insert-selection(CLIPBOARD, CUT_BUFFER1) \n\
+! ~Shift<BtnUp>: select-end(CLIPBOARD, CUT_BUFFER1)
