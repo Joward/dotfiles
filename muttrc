@@ -1,0 +1,33 @@
+set timeout=60
+
+set smtp_url="smtp://sshaexmb1.amd.com/"
+set use_from=yes
+set realname="Mac Xiong"
+set from="Mac.Xiong@amd.com"
+
+set spoolfile="imap://cybarray.amd.com/"
+set folder="imap://cybarray.amd.com/"
+set mail_check=60
+set imap_user=mxiong
+set edit_headers=yes
+
+# make sure the following two directories exist
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+
+set editor="gvim -f"
+set sort=threads
+
+# save sent mail and drafts
+set record="=Sent Items"
+set postponed="=Drafts"
+
+# abook
+set query_command = "abook --mutt-query '%s'"
+macro generic,index,pager \ca "<shell-escape>abook<return>" "launch abook"
+macro index,pager A "<pipe-message>abook --add-email<return>" "add the sender address to abook"
+macro attach 'V' "<pipe-entry>cat >~/.cache/mutt/mail.html && $BROWSER ~/.cache/mutt/mail.html && rm ~/.cache/mutt/mail.html<enter>"
+
+# HTML viewer
+set mailcap_path = ~/.mutt/mailcap
+auto_view text/html
