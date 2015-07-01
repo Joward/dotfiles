@@ -18,6 +18,7 @@ alias vnc 	'vncserver -geometry 1270x720'
 alias srdc	'irwin --site srdc --type gar'
 alias svdc	'irwin --site svdc --type gar'
 alias cyb	'irwin --site cyb --type gar'
+alias atl	'irwin --site atl --type gar'
 alias bjobs 'bjobs|sort'
 
 # Project Sutton
