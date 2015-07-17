@@ -34,3 +34,8 @@ Host cybcron
     ForwardX11 yes
 #    ServerAliveInterval 120
 #    ServerAliveCountMax 30
+
+# Using SSH over the HTTPS port
+Host github.com
+  Hostname ssh.github.com
+  Port 443
