@@ -4,12 +4,13 @@ alias la 	'll -a'
 alias c  	'clear'
 alias m  	'more'
 alias h  	'history'
+alias t99       'tail -n 99'
 alias t       	'tail -F'
 alias bell    	'tput bel'
 alias vim       	'vim -X'
 alias mutt    	'/tool/pandora/.package/mutt-1.5.16-d/bin/mutt'
 alias vnc 	'vncserver -geometry 1270x720'
-
+alias xtermx       	'xterm -fg grey80 -bg grey10'
 
 # alias ssh	'/usr/bin/ssh'
 # alias xterm	'/usr/bin/xterm'
@@ -48,6 +49,7 @@ alias   kz      'cd /proj/kern_dft_vol1/mxiong/kerncz'
 alias   kz0     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz0; bootenv; p4w find_changelist; kz'
 alias   kz1     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz1; bootenv; p4w find_changelist; kz'
 alias   kz2     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz2; bootenv; p4w find_changelist; kz'
+alias   kz3     'cd /proj/kern_dft_vol1/mxiong/kerncz/kz3; bootenv; p4w find_changelist; kz'
 
 alias   tag     'ctags -R $STEM/out/amd64rh3.0.VCS/$DJ_CONTEXT/common/pub $STEM/fch_dft/src/verif'
 alias   rerun   'rm -rfv *; go; make clean; make; make upf; cd $STEM/../debug_kz0; pwd; dvsb dft -w 'when!~never' -D fsdb|tee debug.log'
@@ -61,12 +63,28 @@ alias   av2     'cd /proj/st_fe/mxiong/av2; bootenv; p4w find_changelist; av'
 alias   tag     'ctags -R $STEM/out/linux_2.6.18_64.VCS/$DJ_CONTEXT/common/pub $ANCHOR_jtag_driver_root $ANCHOR_creg_root $STEM/fch_dft/src/verif'
 
 # Project Waterton
-alias   wt      'cd /proj/waterton_dfx/mxiong/'
-alias   wt0     'cd /proj/waterton_dfx/mxiong/wt0; bootenv; p4w find_changelist; wt'
+alias   wt      'cd /proj/waterton_dfx2/mxiong/'
+alias   wt0     'cd /proj/waterton_dfx2/mxiong/wt0; bootenv; p4w find_changelist; wt'
+alias   wt1     'cd /proj/waterton_dfx2/mxiong/wt1; bootenv; p4w find_changelist; wt'
+alias   wt2     'cd /proj/waterton_dfx2/mxiong/wt2; bootenv; p4w find_changelist; wt'
+alias   wt3     'cd /proj/waterton_dfx2/mxiong/wt3; bootenv; p4w find_changelist; wt'
+alias   wt4     'cd /proj/waterton_dfx2/mxiong/wt4; bootenv; p4w find_changelist; wt'
+alias   wt5     'cd /proj/waterton_dfx2/mxiong/wt5; bootenv; p4w find_changelist; wt'
+alias   wt6     'cd /proj/waterton_dfx2/mxiong/wt6; bootenv; p4w find_changelist; wt'
+alias   wt7     'cd /proj/waterton_dfx2/mxiong/wt7; bootenv; p4w find_changelist; wt'
+alias   wt8     'cd /proj/waterton_dfx2/mxiong/wt8; bootenv; p4w find_changelist; wt'
+alias   wt9     'cd /proj/waterton_dfx2/mxiong/wt9; bootenv; p4w find_changelist; wt'
 
 alias   tag     'ctags -R $STEM/out/amd64rh3.0.VCS/$DJ_CONTEXT/common/pub $STEM/fch_dft/src/verif'
 
-
+alias   rerun   'rm -rfv *; go; rm -rfv $STEM/out ; make; make upf; cd $STEM/../debug_wt0; pwd; dvsb dft -w 'when!~never' -D fsdb|tee debug.log'
+alias   resms   'rm -rfv dft logs ; dvsb dft -w 'when=dft_postsms' -D POSTSMSSIM -D ecomode -D fsdb -D nocompile'
 alias   pass    'grep "dv: PASSED" logs/* | sort'
 alias   fail    'grep "dv: FAILED" logs/* | sort'
 
+# Project Zeppelin
+alias   ts      'cd /proj/taishan_dfx/mxiong/'
+
+# Project Raven
+alias   ss      'cd /proj/sandstone_dfx/mxiong/'
+alias   ss2     'cd /proj/sandstone_dfx2/mxiong/'
