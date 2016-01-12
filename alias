@@ -15,10 +15,10 @@ alias vnc 	'vncserver -geometry 1270x720'
 # alias xterm	'/usr/bin/xterm'
 # alias xterm	'xterm -e screen'
 
-alias srdc	'irwin --site srdc --type gar'
-alias svdc	'irwin --site svdc --type gar'
-alias cyb	'irwin --site cyb --type gar'
-alias atl	'irwin --site atl --type gar'
+alias srdc	'irwin --site srdc --type gar --show'
+alias svdc	'irwin --site svdc --type gar --show'
+alias cyb	'irwin --site cyb --type gar --show'
+alias atl	'irwin --site atl --type gar --show'
 alias bjobs 'bjobs|sort'
 
 # Project Sutton
