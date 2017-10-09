@@ -1,16 +1,22 @@
 alias ls 	'ls --color=tty -F'
 alias l 	'ls -a -C -F'
 alias la 	'll -a'
+alias lt 	'll -t'
 alias c  	'clear'
 alias m  	'more'
 alias h  	'history'
 alias t99       'tail -n 99'
 alias t       	'tail -F'
+alias lb       	'lsf_bjobs -w | grep atlnonveu'
 alias bell    	'tput bel'
 alias vim       	'vim -X'
+alias clex       	'/home/mxiong/local/clex/bin/clex'
 alias mutt    	'/tool/pandora/.package/mutt-1.5.16-d/bin/mutt'
 alias vnc 	'vncserver -geometry 1270x720'
 alias xtermx       	'xterm -fg grey80 -bg grey10'
+alias xtermg        'xterm -fg #E6D237 -bg #13773D'
+unalias cd
+
 
 # alias ssh	'/usr/bin/ssh'
 # alias xterm	'/usr/bin/xterm'
@@ -21,6 +27,37 @@ alias svdc	'irwin --site svdc --type gar --show'
 alias cyb	'irwin --site cyb --type gar --show'
 alias atl	'irwin --site atl --type gar --show'
 alias bjobs 'bjobs|sort'
+
+# Project Vega20
+alias   v21     'cd /proj/vega20-dft-nobackup'
+alias   v22     'cd /proj/vega20-dft2-nobackup'
+alias   v24     'cd /proj/vega20-dft4-nobackup'
+alias   v25     'cd /proj/vega20-dft5-nobackup/mxiong'
+alias   v26     'cd /proj/vega20-dft6-nobackup'
+alias   v27     'cd /proj/vega20-dft7-nobackup'
+alias   v29     'cd /proj/vega20-dft9-nobackup-er'
+alias   v210    'cd /proj/vega20-dft10'
+
+# Project Polaris22
+alias   pl1     'cd /proj/racerx_atpg1/P22_DV/mxiong'
+alias   pl3     'cd /proj/plr22-dft3-nobackup/regression'
+alias   pl4     'cd /proj/plr22-dft4/users/mxiong'
+alias   pl5     'cd /proj/plr22-dft5-nobackup/users/mxiong'
+alias   pl6     'cd /proj/lexa-atpg3-nobackup/users/mxiong'
+
+
+# Project GreenLand
+alias   gl2     'cd /proj/greenland-dft2/user/mxiong'
+alias   gl3     'cd /proj/greenland-dft3/user/mxiong'
+alias   gl4     'cd /proj/greenland-dft4/user/mxiong'
+alias   gl5     'cd /proj/greenland-dft5_nobackup/user/mxiong'
+alias   gl7     'cd /proj/greenland-dft7_nobackup/user/mxiong'
+alias   gl8     'cd /proj/greenland-dft8_scratch/user/mxiong'
+alias   gl9     'cd /proj/ellesmere_dft_gsim/xyin/grl_sms4'
+
+alias   gl4v    'scp /proj/greenland-dft4/user/mxiong/gnl04/src/verif/dfx/dfx_macro_chk/dfx_macro_assert.v srdcws313:/local_vol1_nobackup/greenland/'
+alias   gl4c    'scp /proj/greenland-dft4/user/mxiong/gnl04/src/test/suites/chip/dft/stac/dfx_override_check.cpp srdcws313:/local_vol1_nobackup/greenland/'
+alias   gl4t    'scp /proj/greenland-dft4/user/mxiong/gnl04/src/test/suites/chip/dft/stac/test.tdl srdcws313:/local_vol1_nobackup/greenland/'
 
 # Project Sutton
 alias   sn    	'cd /proj/sutton_dft_vol1/mxiong'
