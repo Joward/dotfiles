@@ -11,10 +11,27 @@ alias lb       	'lsf_bjobs -w | grep atlnonveu'
 alias bell    	'tput bel'
 alias vim       	'vim -X'
 alias clex       	'/home/mxiong/local/clex/bin/clex'
-alias mutt    	'/tool/pandora/.package/mutt-1.5.16-d/bin/mutt'
-alias vnc 	'vncserver -geometry 1270x720'
+alias delta       	'/home/mxiong/local/delta/delta'
+alias duf       	'/home/mxiong/local/duf/duf'
+alias gdu       	'/home/mxiong/local/gdu/gdu_linux_amd64'
+alias git       	'/home/mxiong/local/git/bin/git'
+alias tig       	'/home/mxiong/local/tig/bin/tig'
+alias glibc       	'setenv LD_PRELOAD /local_vol1_nobackup/mxiong/workspace/glibc/glibc-2.14/build/libc.so.6'
+alias nvim       	'/home/mxiong/local/nvim/bin/nvim'
+# alias mutt    	'/tool/pandora/.package/mutt-1.5.16-d/bin/mutt'
+alias htop    	    'htop -u mxiong'
+alias screen    	'screen -U'
+# alias ccollab    	'/tool/pandora64/.package/ccollab_client-12_4_12401/ccollab'
+# alias vs    	'/tool/cbar/apps_lipc24_64/slickedit/16.300/bin/vs'
+alias vnc 	        'vncserver -geometry 1600x900'
 alias xtermx       	'xterm -fg grey80 -bg grey10'
 alias xtermg        'xterm -fg #E6D237 -bg #13773D'
+alias verdi_f         'verdi +define+SIMULATION -f verdi_with_vcs.f -ssy -ssv -ssz -sverilog'
+alias verdi_k         'verdi -elab exec/vcs_sim_exe.daidir/kdb'
+alias cbwa         'source /home/mxiong/script/sourceme.csh'
+# alias soffice         '/tool/pandora64/.package/libreoffice-5.4.0.3/bin/soffice'
+# alias firefox         '/tool/pandora64/.package/firefox-56.0.2/bin/firefox'
+# alias dvt         'module load dvt/20.1.36'
 unalias cd
 
 
@@ -25,7 +42,7 @@ unalias cd
 alias srdc	'irwin --site srdc --type gar --show'
 alias svdc	'irwin --site svdc --type gar --show'
 alias cyb	'irwin --site cyb --type gar --show'
-alias atl	'irwin --site atl --type gar --show'
+alias atl	'irwin --site atl --type hen --show'
 alias bjobs 'bjobs|sort'
 
 # Project Vega20
@@ -68,7 +85,7 @@ alias   sn3     'cd /proj/sutton_dft_vol1/mxiong/sn3; bootenv; p4w find_changeli
 alias 	sn0v    'cd /proj/kern_dft_vol1/mxiong/tree/sn0; bootenv'
 alias 	sn1v    'cd /proj/kern_dft_vol1/mxiong/tree/sn1; bootenv'
 
-alias   tag     '/tool/pandora64/.package/ctags-5.7/bin/ctags -R $STEM/model_lib'
+# alias   tag     '/tool/pandora64/.package/ctags-5.7/bin/ctags -R $STEM/model_lib'
 
 # Project Kern
 alias 	kn	    'cd /proj/kn_fe/mxiong/trees/'

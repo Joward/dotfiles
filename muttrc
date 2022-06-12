@@ -29,5 +29,12 @@ macro index,pager A "<pipe-message>abook --add-email<return>" "add the sender ad
 macro attach 'V' "<pipe-entry>cat >~/.cache/mutt/mail.html && $BROWSER ~/.cache/mutt/mail.html && rm ~/.cache/mutt/mail.html<enter>"
 
 # HTML viewer
-set mailcap_path = ~/.mutt/mailcap
+set mailcap_path = ~/.mutt/mailcap_w3m
 auto_view text/html
+
+folder-hook . "ignore *; unignore from subject X-mailer date"
+folder-hook sent.* "ignore *; unignore to subject date"
+
+set pager_stop
+set pager_index_lines=9
+charset-hook !utf-8 gb2312
