@@ -8,7 +8,7 @@ Xft.hintstyle: hintfull
 
 !xterm.termName:     xterm-256color
 ! xterm*geometry: 	80x25
-xterm*background:   	#13773D
+xterm*background:   	#008B45
 xterm*foreground:   	#E6D237
 xterm*faceName: Bitstream Vera Sans Mono:size=13
 
