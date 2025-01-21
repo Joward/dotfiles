@@ -15,3 +15,6 @@
 	ls = log --no-merges --color --graph --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cblue %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lss = log --no-merges --color --stat --graph --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cblue %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
 	st = status --untracked-files=no
+[safe]
+	directory = /scratch/noclean/canghaiv2_t_scratch/PN99/test/tvg/serdes
+	directory = /scratch/noclean/canghaiv2_t_scratch/PN99/test/tvg/serdes/chips/projects/CANGHAI_V2/sbus_talk/config

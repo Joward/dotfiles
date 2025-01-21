@@ -1,6 +1,8 @@
+zmodload zsh/zprof
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-export PATH=$HOME/local/bin:/tools/bin:$PATH
+export PATH=$HOME/local/bin:/usr/local/bin:/tools/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -27,7 +29,7 @@ ZSH_THEME="bira"
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -71,7 +73,8 @@ ZSH_THEME="bira"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+# plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+  export EDITOR='vim'
 # else
 #   export EDITOR='nvim'
 # fi
@@ -107,3 +110,34 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $HOME/.config/broot/launcher/bash/br
+
+# # Synopsys
+# export VCSVER=2023.12-SP2-2
+# export VERDIVER=2023.12-SP2-2
+# export VCSTATICVER=2020.12-SP2-10
+# 
+# export SYNTHVER=2022.12-SP3
+# export LCVER=2023.12-SP5
+# 
+# # Mentor
+# export DFTVER=2023.4
+# export MODELVER=2023.4_3
+# export VISUALIZERVER=2022.3_1
+# 
+# # Cadence
+# export XLMAVER=23.03.002
+# export VDEBUGVER=22.06.a071
+ 
+# DVT
+export AMIQVER=22.1.20
+
+# DFT tools
+export ACTROOT="/lab/projects/da/act-1.0"
+. $ACTROOT/opt/actmodules-3.1.6/3.1.6/init/zsh
+  
+# export ICPROCESS=cln03p
+  
+# module add act
+# module load dft_tools
+
+zprof
