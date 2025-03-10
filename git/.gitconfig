@@ -3,7 +3,7 @@
 	email = mxiong@hotmail.com
 [core]
 	editor = vim
-	excludesfile = /home/mxiong/.gitignore
+	excludesfile = /home/mx899684/.gitignore_global
 [diff]
 	tool = vimdiff
 [color]
